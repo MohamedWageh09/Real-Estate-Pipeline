@@ -4,7 +4,7 @@
 
 
 ## Overview
-This project is a **data engineering pipeline** that extracts, processes, and stores real estate listings from property-selling websites like **Property Finder** and **Bayut**. The goal is to **scrape, clean, and store real estate data** into a **PostgreSQL database**, utilizing **Apache Spark** for scalable data processing.
+This project is a **data engineering pipeline** that extracts, processes, and stores real estate listings from property-selling websites like **Property Finder** and **Bayut**. The goal is to **scrape, clean, and store real estate data** into a **PostgreSQL database**, utilizing **Apache Spark** for data processing.
 
 ## Tech Stack
 - **Python** → Web Scraping & Data Processing  
@@ -35,9 +35,10 @@ real-estate-data-engineering
 ### **1️⃣ Web Scraping (`scrapper.py`)**  
 - Scrapes real estate listings from **Property Finder** and **Bayut**.  
 - Extracts data like **title, price, location, size, bedrooms, bathrooms, and URL**.  
-- Saves raw data in the `/data` folder.  
+- Saves raw data in the `/data` folder with patterns data/bayut_{date}.csv and property_finder_{date}.csv.  
 
 ### **2️⃣ Data Processing (`preprocessing.py`)**  
+- It runs on today's scrapped data files.
 - Uses **Apache Spark** to clean and transform the scraped data.  
 - Handles **missing values, duplicates, and data formatting**.
 - Applying some logic such as extracting the sub-location from location. 
