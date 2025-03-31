@@ -1,0 +1,7 @@
+pandas
+pyspark
+beautifulsoup4
+sqlalchemy
+requests
+psycopg2
+setuptools
