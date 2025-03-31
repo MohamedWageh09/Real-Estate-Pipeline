@@ -14,7 +14,7 @@ def scrape_property_finder():
     
     df = pd.DataFrame(columns=['Scraping_Date', 'Type', 'Description', 'Bedrooms', 'Bathrooms', 'Area', 'Down Payment', 'Price', 'Location'])
 
-    for i in range(1, 20):
+    for i in range(1, 40):
         url = f"https://www.propertyfinder.eg/en/search?c=1&fu=0&ob=mr&page={i}"
         reqs = requests.get(url, headers=headers)
         try:
@@ -48,7 +48,7 @@ def scrape_property_finder():
 def scrape_bayut():
 
     df = pd.DataFrame(columns=['Scraping_Date', 'Type', 'Description', 'Bedrooms', 'Bathrooms', 'Area', 'Down Payment', 'Location', 'Price'])
-    for i in range (1, 20):
+    for i in range (1, 40):
         url = f'https://www.bayut.eg/en/egypt/properties-for-sale/page-{i}/'
         request = requests.get(url, headers=headers)
         try:

@@ -3,5 +3,5 @@ pyspark
 beautifulsoup4
 sqlalchemy
 requests
-psycopg2
+psycopg2-binary
 setuptools
