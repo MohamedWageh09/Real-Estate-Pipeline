@@ -44,7 +44,8 @@ real-estate-data-engineering
 ### **1️⃣ Web Scraping (`scrapper.py`)**  
 - Scrapes real estate listings from **Property Finder** and **Bayut**.  
 - Extracts data like **title, price, location, size, bedrooms, bathrooms, and URL**.  
-- Saves raw data in the `/data` folder with patterns data/bayut_{date}.csv and property_finder_{date}.csv.  
+- Saves raw data in the `/data` folder with patterns data/bayut_{date}.csv and property_finder_{date}.csv.
+- Handeled some data quality issues on the spot in the scrapping, and the rest and transformations are done in spark (preprocessing.py)
 
 ### **2️⃣ Data Processing (`preprocessing.py`)**  
 - It Processes the latest downloaded scraped data for the day.
