@@ -2,6 +2,15 @@
 
 ![Pipeline](https://github.com/user-attachments/assets/773d8646-dcd9-4072-bbd7-32927aa71c0e)
 
+![image](https://github.com/user-attachments/assets/9e606154-b097-432d-b932-3379c58e50ce)
+
+![image](https://github.com/user-attachments/assets/dbb05f30-36b2-4410-ae60-2467d0697fbf)
+
+![image](https://github.com/user-attachments/assets/47e48bd4-c62d-4979-8c34-01696da66ad6)
+
+
+
+
 
 ## Overview
 This project is a **data engineering pipeline** that extracts, processes, and stores real estate listings from property-selling websites like **Property Finder** and **Bayut**. The goal is to **scrape, clean, and store real estate data** into a **PostgreSQL database**, utilizing **Apache Spark** for data processing.
