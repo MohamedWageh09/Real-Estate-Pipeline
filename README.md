@@ -47,7 +47,7 @@ real-estate-data-engineering
 - Saves raw data in the `/data` folder with patterns data/bayut_{date}.csv and property_finder_{date}.csv.  
 
 ### **2️⃣ Data Processing (`preprocessing.py`)**  
-- It runs on today's scrapped data files.
+- It Processes the latest downloaded scraped data for the day.
 - Uses **Apache Spark** to clean and transform the scraped data.  
 - Handles **missing values, duplicates, and data formatting**.
 - Applying some logic such as extracting the sub-location from location. 
@@ -63,7 +63,7 @@ real-estate-data-engineering
 
 ```
 
-## Future Improvements
-- [ ] Automate daily data scraping
-- [ ] Add machine learning model for price prediction  
+## Ideas if someone wants to add on this project or what i plan to do later:
+- [ ] Automate daily data scraping (Airflow)
+- [ ] Add machine learning model for price prediction 
 
