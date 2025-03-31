@@ -14,6 +14,7 @@ def clean_data():
     df = df1.unionByName(df2)
     cleaned_cols = [re.sub("[^a-zA-Z0-9]", '', c) for c in df.columns]
     df = df.toDF(*cleaned_cols)
+    df = df.withColumn('ScrapingDate', col('ScrapingDate').cast(DateType()))
     df = df.withColumn('Price', regexp_replace(col('Price'), '[^0-9]', '').cast(IntegerType()))
     df = df.withColumn('Area', regexp_replace(col('Area'), '[^0-9]', '').cast(IntegerType()))
     df = df.withColumn('DownPayment', regexp_replace(col('DownPayment'), '[^0-9]', '').cast(IntegerType()))
