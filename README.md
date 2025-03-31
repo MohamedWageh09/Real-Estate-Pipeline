@@ -1,5 +1,8 @@
 # Real Estate Data Engineering Project
 
+![Pipeline](https://github.com/user-attachments/assets/773d8646-dcd9-4072-bbd7-32927aa71c0e)
+
+
 ## Overview
 This project is a **data engineering pipeline** that extracts, processes, and stores real estate listings from property-selling websites like **Property Finder** and **Bayut**. The goal is to **scrape, clean, and store real estate data** into a **PostgreSQL database**, utilizing **Apache Spark** for scalable data processing.
 
@@ -27,7 +30,7 @@ real-estate-data-engineering
 
 ---
 
-## 🛠How It Works
+## How It Works
 
 ### **1️⃣ Web Scraping (`scrapper.py`)**  
 - Scrapes real estate listings from **Property Finder** and **Bayut**.  
